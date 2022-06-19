@@ -14,8 +14,7 @@ The DIT extension for JSON Schema is an effort to make more JSON Schema-based fo
 | --------------- | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- |
 | __isUpload      | boolean             | Used to indicate that a field is an upload field             | **API** for pre-signature. Client for loading the upload aread |                         |
 | __labels        | Object (Appendix 1) | Used to hold localization data                               | **Client** uses to display                                   |                         |
-| __enumFrom      | String              | Used to indicate where enum data comes from                  | **Client** to create an enum for the specified field in real-time while the other fields with the selector of "enumFrom"are being filled out. | __enumFor               |
-| __enumFor       | String              | Used to indicate where enum data goes to                     | **Client** as a source of enum data for any field that has the selector "enumFor". Used in conjunction with __enumFrom | __enumFrom              |
+| __enumFrom      | array               | Used to indicate where enum data comes from                  | **Client** to create an enum for the specified field in real-time while the other fields with the selector of "enumFrom"are being filled out. |                         |
 | __validationApi | String              | Used to indicate that the field needs to be validated by an external API. The value of the field is the URL to the API. | **APIs** to make HTTP calls to the external APIs.            |                         |
 
 
@@ -35,4 +34,3 @@ The DIT extension for JSON Schema is an effort to make more JSON Schema-based fo
     required: ["ckb", "ar", "en"]
 }
 ```
-
