@@ -27,10 +27,10 @@ The DIT extension for JSON Schema is an effort to make more JSON Schema-based fo
 
 ```json
 {
-    ckb: { type: "string" },
-    ar: { type: "string" },
-    en: { type: "string" },
-    nkb: { type: "string" },
-    required: ["ckb", "ar", "en"]
+    "ckb": { "type": "string" },
+    "ar": { "type": "string" },
+    "en": { "type": "string" },
+    "nkb": { "type": "string" },
+    "required": ["ckb", "ar", "en"]
 }
 ```
